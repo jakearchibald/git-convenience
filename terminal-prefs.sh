@@ -77,8 +77,14 @@ bash_prompt() {
     local BGC="\[\033[46m\]"
     local BGW="\[\033[47m\]"
 
-    PS1="$TITLEBAR\u@\h ${EMC}\${NEW_PWD}${EMY}\$(__git_ps1 '[%s]')${UC}\\$ ${NONE}"
+    if [[ $(git --version) == *msysgit* ]]; then
+        # The user & host stuff is lengthy and meaningless on Windows
+        PS1="${EMC}\${NEW_PWD}${EMY}\$(__git_ps1 '[%s]')${UC}\\$ ${NONE}"
+    else
+        PS1="$TITLEBAR\u@\h ${EMC}\${NEW_PWD}${EMY}\$(__git_ps1 '[%s]')${UC}\\$ ${NONE}"
+    fi
     # extra backslash in front of \$ to make bash colorize the prompt
+
 }
 
 PROMPT_COMMAND=bash_prompt_command

@@ -8,8 +8,8 @@ if type git-up -t > /dev/null 2>&1; then
 	alias gup='git-up'
 	alias gp='git-up && git push'
 else
-	alias gup='git pull'
-	alias gp='git pull && git push'	
+	alias gup='git pull --rebase'
+	alias gp='gup && git push'	
 fi
 
 function gc {

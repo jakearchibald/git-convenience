@@ -36,6 +36,7 @@ bash_prompt_command() {
     fi
 }
 
+
 bash_prompt() {
     case $TERM in
      xterm*|rxvt*)
@@ -77,11 +78,11 @@ bash_prompt() {
     local BGC="\[\033[46m\]"
     local BGW="\[\033[47m\]"
 
-    if [[ $(git --version) == *msysgit* ]]; then
-        # The user & host stuff is lengthy and meaningless on Windows
-        PS1="${EMC}\${NEW_PWD}${EMY}\$(__git_ps1 '[%s]')${UC}\\$ ${NONE}"
+    if [[ $(uname) = MINGW* ]]; then
+        # The user & host stuff is lengthy and not very useful in git bash
+        PS1="${EMC}\${NEW_PWD}${EMY}\$(__git_ps1 '[%s]')${EMW}\\$ ${NONE}"
     else
-        PS1="$TITLEBAR\u@\h ${EMC}\${NEW_PWD}${EMY}\$(__git_ps1 '[%s]')${UC}\\$ ${NONE}"
+        PS1="$TITLEBAR\u@\h ${EMC}\${NEW_PWD}${EMY}\$(__git_ps1 '[%s]')${EMW}\\$ ${NONE}"
     fi
     # extra backslash in front of \$ to make bash colorize the prompt
 

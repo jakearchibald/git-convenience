@@ -48,9 +48,9 @@ The prompt shows the current branch & among other helpful things:
 * `*` - Uncommitted changes
 * `+` - Staged changes
 * `%` - Untracked files
-* `&lt;` - You're behind the origin
-* `&gt;` - You're ahead of the origin
-* `&lt;&gt;` - You've diverged from the origin
+* `<` - You're behind the origin
+* `>` - You're ahead of the origin
+* `<>` - You've diverged from the origin
 * `=` - You're up-to-date with the origin
 
 ## Other tools & props

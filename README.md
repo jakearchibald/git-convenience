@@ -24,28 +24,19 @@ eval "$(curl -L https://raw.github.com/jakearchibald/git-convenience/master/setu
 
 ## Shortcuts
 
-<dl>
-<dt>`gs`</dt>
-<dd>git status</dd>
-<dt>`gaa`</dt>
-<dd>git add --all - Add all changes (including untracked) to staging</dd>
-<dt>`gc "Message"`</dt>
-<dd>Commit all changes (except untracked) with message</dd>
-<dt>`goops`</dt>
-<dd>Add changes to previous commit &amp; edit commit message</dd>
-<dt>`gp`</dt>
-<dd>Pull (via rebase) then push</dd>
-<dt>`gup`</dt>
-<dd>Pull (via rebase)</dd>
-<dt>`glog`</dt>
-<dd>Decorated &amp; graphed log</dd>
-<dt>`gdiff`</dt>
-<dd>A word-diff of changes</dd>
-<dt>`gclean`</dt>
-<dd>Compress &amp; garbage collect data store</dd>
-</dl>
 
-If you've installed the wonderful [git-up]https://github.com/aanand/git-up (which you should), it'll be used instead of `git pull --rebase`.
+* `gs` - git status
+* `gaa` - git add --all - Add all changes (including untracto staging</dd>
+* `gc "Message"` - Commit all changes (except untracked) message</dd>
+* `goops` - Add changes to previous commit &amp; edit comessage</dd>
+* `gp` - Pull (via rebase) then push
+* `gup` - Pull (via rebase)
+* `glog` - Decorated &amp; graphed log
+* `gdiff` - A word-diff of changes
+* `gclean` - Compress &amp; garbage collect data store
+
+
+If you've installed the wonderful [git-up](https://github.com/aanand/git-up) (which you should), it'll be used instead of `git pull --rebase`.
 
 ## Prompt
 
@@ -53,15 +44,16 @@ If you've installed the wonderful [git-up]https://github.com/aanand/git-up (whic
 
 The prompt shows the current branch & among other helpful things:
 
-<dl>
-<dt>`*`</dt>
-<dd>Uncommitted changes</dd>
-<dt>`%`</dt>
-<dd>Untracked files</dd>
-<dt>`&lt;`</dt>
-<dd>You're behind the origin</dd>
-<dt>`&gt;`</dt>
-<dd>You're ahead of the origin</dd>
-<dt>`&lt;&gt;`</dt>
-<dd>You've diverged from the origin</dd>
-</dl>
+
+* `*` - Uncommitted changes
+* `+` - Staged changes
+* `%` - Untracked files
+* `&lt;` - You're behind the origin
+* `&gt;` - You're ahead of the origin
+* `&lt;&gt;` - You've diverged from the origin
+* `=` - You're up-to-date with the origin
+
+## Other tools & props
+
+* [git-up](https://github.com/aanand/git-up) - A brilliant tool for syncing branches
+* [git completion](https://github.com/git/git/tree/master/contrib/completion) - The scripts used for the prompt & tab completion

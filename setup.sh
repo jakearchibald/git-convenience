@@ -32,8 +32,8 @@ function setup_git_convenience {
 		git_load_helper https://raw.github.com/git/git/e90020cdb3273af3b0c7915c0aacf16b19bbf994/contrib/completion/git-prompt.sh "$HOME/.git-prompt.sh" "$bash_startup_file" "$1"
 	fi
 
-	git_load_helper http://jakemac.local/git-tools/terminal-prefs.sh "$HOME/.terminal-prefs.sh" "$bash_startup_file" "$1"
-	git_load_helper http://jakemac.local/git-tools/git-shortcuts.sh "$HOME/.git-shortcuts.sh" "$bash_startup_file" "$1"
+	git_load_helper https://raw.github.com/jakearchibald/git-convenience/master/terminal-prefs.sh "$HOME/.terminal-prefs.sh" "$bash_startup_file" "$1"
+	git_load_helper https://raw.github.com/jakearchibald/git-convenience/master/git-shortcuts.sh "$HOME/.git-shortcuts.sh" "$bash_startup_file" "$1"
 
 	unset setup_git_convenience
 	unset git_load_helper

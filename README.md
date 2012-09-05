@@ -46,7 +46,7 @@ If you've installed the wonderful [git-up](https://github.com/aanand/git-up) (wh
 
 ## Prompt
 
-![Prompt screenshot](https://raw.github.com/benseven/git-convenience/master/screenshot.png)
+![Prompt screenshot](https://raw.github.com/benseven/git-convenience-no-rebase/master/screenshot.png)
 
 The prompt shows the current branch & among other helpful things:
 

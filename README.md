@@ -2,6 +2,8 @@
 
 This is Jake Archibald's (@jaffathecake) Git Convenience, with one simple change: n00bs, and others, might not want Git Pull to use --rebase (I tried reading about it, really I did - and I almost get it - but for now, I want the lazytimes without wrapping my head around using --rebase day-to-day </excuses>).
 
+I've also added the 'gwut' command, to print a list of the Git Convenience commands and symbols used at prompt - this may not work on everything as it relies on bash (I'm new...)
+
 # Convenient bits & bobs for Git
 
 Git out-of-the-box isn't your best friend, git-convenience pulls together a few tools that make it that little bit more friendly. You get:
@@ -17,18 +19,18 @@ Works on OSX, Linux & Windows git-bash.
 Trial it in your current terminal session:
 
 ```
-eval "$(curl -L https://raw.github.com/benseven/git-convenience/master/setup.sh) trial"
+eval "$(curl -L https://raw.github.com/benseven/git-convenience-no-rebase/master/setup.sh) trial"
 ```
 
 If it works for you, have it in all your terminals:
 
 ```
-eval "$(curl -L https://raw.github.com/benseven/git-convenience/master/setup.sh)"
+eval "$(curl -L https://raw.github.com/benseven/git-convenience-no-rebase/master/setup.sh)"
 ```
 
 ## Shortcuts
 
-
+* `gwut` - List all Git Convenience commands and prompt meanings.
 * `gs` - git status
 * `gaa` - git add --all - Add all changes (including untracto staging</dd>
 * `gc "Message"` - Commit all changes (except untracked) message</dd>

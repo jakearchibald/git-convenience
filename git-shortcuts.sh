@@ -25,6 +25,7 @@ function goops {
 function gwut {
 	#!/bin/bash
 	echo "
+- - - - - - - - - - - - - -
 Git Convenience Shortcuts:
 - - - - - - - - - - - - - -
 gwut - List all Git Convenience commands.
@@ -37,5 +38,20 @@ gup - Pull (not via --rebase - see 'About this fork')
 glog - Decorated & graphed log
 gdiff - A word-diff of changes
 gclean - Compress & garbage collect data store
+
+- - - - - - - - - - - - - -
+Prompt Symbols:
+- - - - - - - - - - - - - -
+The prompt shows the current branch & among other helpful things:
+
+*  - Uncommitted changes
++  - Staged changes
+%  - Untracked files
+<  - You're behind the origin
+>  - You're ahead of the origin
+<> - You've diverged from the origin
+=  - You're up-to-date with the origin
+
+- - - - - - - - - - - - - -
 "
 }

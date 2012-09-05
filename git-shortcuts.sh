@@ -21,3 +21,21 @@ function goops {
 	git commit -a --amend
 	gs
 }
+
+function gwut {
+	#!/bin/bash
+	echo "
+Git Convenience Shortcuts:
+- - - - - - - - - - - - - -
+gwut - List all Git Convenience commands.
+gs - git status
+gaa - git add --all - Add all changes (including untracto staging)
+gc "Message" - Commit all changes (except untracked) message
+goops - Add changes to previous commit & edit comessage
+gp - Pull then push - does not use --rebase (read 'About this fork')
+gup - Pull (not via --rebase - see 'About this fork')
+glog - Decorated & graphed log
+gdiff - A word-diff of changes
+gclean - Compress & garbage collect data store
+"
+}

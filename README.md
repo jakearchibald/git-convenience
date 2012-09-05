@@ -36,7 +36,7 @@ eval "$(curl -L https://raw.github.com/jakearchibald/git-convenience/master/setu
 * `gclean` - Compress &amp; garbage collect data store
 
 
-If you've installed the wonderful [git-up](https://github.com/aanand/git-up) (which you should), it'll be used instead of `git pull`.
+If you've installed the wonderful [git-up](https://github.com/aanand/git-up) (which you should), it'll be used instead of `git pull --rebase`.
 
 ## Prompt
 
@@ -58,3 +58,4 @@ The prompt shows the current branch & among other helpful things:
 
 * [git-up](https://github.com/aanand/git-up) - A brilliant tool for syncing branches
 * [git completion](https://github.com/git/git/tree/master/contrib/completion) - The scripts used for the prompt & tab completion
+

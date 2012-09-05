@@ -40,7 +40,7 @@ eval "$(curl -L https://raw.github.com/benseven/git-convenience/master/setup.sh)
 * `gclean` - Compress &amp; garbage collect data store
 
 
-If you've installed the wonderful [git-up](https://github.com/aanand/git-up) (which you should), it'll be used instead of `git pull --rebase`.
+If you've installed the wonderful [git-up](https://github.com/aanand/git-up) (which you should), it'll be used instead of `git pull`.
 
 ## Prompt
 

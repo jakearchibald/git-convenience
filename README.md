@@ -24,7 +24,7 @@ eval "$(curl -L https://raw.github.com/jakearchibald/git-convenience/master/setu
 
 ## Shortcuts
 
-
+* `gwut` - List all Git Convenience commands and prompt meanings.
 * `gs` - git status
 * `gaa` - git add --all - Add all changes (including untracto staging</dd>
 * `gc "Message"` - Commit all changes (except untracked) message</dd>
@@ -55,5 +55,7 @@ The prompt shows the current branch & among other helpful things:
 
 ## Other tools & props
 
+
 * [git-up](https://github.com/aanand/git-up) - A brilliant tool for syncing branches
 * [git completion](https://github.com/git/git/tree/master/contrib/completion) - The scripts used for the prompt & tab completion
+

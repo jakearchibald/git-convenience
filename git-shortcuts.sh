@@ -21,3 +21,37 @@ function goops {
 	git commit -a --amend
 	gs
 }
+
+function gwut {
+	#!/bin/bash
+	echo "
+- - - - - - - - - - - - - -
+Git Convenience Shortcuts:
+- - - - - - - - - - - - - -
+gwut - List all Git Convenience commands and prompt symbols.
+gs - git status
+gaa - git add --all - Add all changes (including untracto staging)
+gc "Message" - Commit all changes (except untracked) message
+goops - Add changes to previous commit & edit comessage
+gp - Pull (via rebase) then push
+gup - Pull (via rebase)
+glog - Decorated & graphed log
+gdiff - A word-diff of changes
+gclean - Compress & garbage collect data store
+
+- - - - - - - - - - - - - -
+Prompt Symbols:
+- - - - - - - - - - - - - -
+The prompt shows the current branch & among other helpful things:
+
+*  - Uncommitted changes
++  - Staged changes
+%  - Untracked files
+<  - You're behind the origin
+>  - You're ahead of the origin
+<> - You've diverged from the origin
+=  - You're up-to-date with the origin
+
+- - - - - - - - - - - - - -
+"
+}

@@ -26,8 +26,8 @@ eval "$(curl -L https://raw.github.com/jakearchibald/git-convenience/master/setu
 
 * `gwut` - List all Git Convenience commands and prompt meanings.
 * `gs` - git status
-* `gaa` - git add --all - Add all changes (including untracto staging</dd>
-* `gc "Message"` - Commit all changes (except untracked) message</dd>
+* `gaa` - git add --all - Add all changes (including untracted) to staging</dd>
+* `gc "Message"` - Commit all changes (except untracked) with message</dd>
 * `goops` - Add changes to previous commit &amp; edit comessage</dd>
 * `gp` - Pull (via rebase) then push
 * `gup` - Pull (via rebase)

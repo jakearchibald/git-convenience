@@ -13,7 +13,8 @@ else
 fi
 
 function gc {
-	git commit -am "$1"
+	gaa
+	git commit -m "$1"
 	gs
 }
 
@@ -23,15 +24,14 @@ function goops {
 }
 
 function gwut {
-	#!/bin/bash
 	echo "
 - - - - - - - - - - - - - -
 Git Convenience Shortcuts:
 - - - - - - - - - - - - - -
 gwut - List all Git Convenience commands and prompt symbols.
 gs - git status
-gaa - git add --all - Add all changes (including untracto staging)
-gc "Message" - Commit all changes (except untracked) message
+gaa - Add all changes (including untracted files) to staging
+gc "Message" - Commit all new files & changes with message
 goops - Add changes to previous commit & edit comessage
 gp - Pull (via rebase) then push
 gup - Pull (via rebase)

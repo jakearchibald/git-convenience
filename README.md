@@ -24,16 +24,16 @@ eval "$(curl -L https://raw.github.com/jakearchibald/git-convenience/master/setu
 
 ## Shortcuts
 
-* `gwut` - List all Git Convenience commands and prompt meanings.
+* `gwut` - List all Git Convenience commands and prompt symbols
 * `gs` - git status
-* `gaa` - git add --all - Add all changes (including untracted) to staging</dd>
-* `gc "Message"` - Commit all changes (except untracked) with message</dd>
-* `goops` - Add changes to previous commit &amp; edit comessage</dd>
+* `gaa` - Add all changes (including untracted files) to staging
+* `gc "Message"` - Commit all new files & changes with message
+* `goops` - Add changes to previous commit & edit comessage
 * `gp` - Pull (via rebase) then push
 * `gup` - Pull (via rebase)
-* `glog` - Decorated &amp; graphed log
+* `glog` - Decorated & graphed log
 * `gdiff` - A word-diff of changes
-* `gclean` - Compress &amp; garbage collect data store
+* `gclean` - Compress & garbage collect data store
 
 
 If you've installed the wonderful [git-up](https://github.com/aanand/git-up) (which you should), it'll be used instead of `git pull --rebase`.

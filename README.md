@@ -32,6 +32,7 @@ eval "$(curl -L https://raw.github.com/jakearchibald/git-convenience/master/setu
 * `gp` - Pull (via rebase) then push
 * `gup` - Pull (via rebase)
 * `glog` - Decorated & graphed log
+* `glogo` - As glog, including orphan commits
 * `gdiff` - A word-diff of changes
 * `gclean` - Compress & garbage collect data store
 

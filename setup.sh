@@ -24,16 +24,16 @@ function setup_git_convenience {
 
 	# If git completion not installed...
 	if ! type -t __gitcomp > /dev/null 2>&1; then
-		git_load_helper https://raw.github.com/git/git/e90020cdb3273af3b0c7915c0aacf16b19bbf994/contrib/completion/git-completion.bash "$HOME/.git-completion.bash" "$bash_startup_file" "$1"
+		git_load_helper https://raw.githubusercontent.com/git/git/e90020cdb3273af3b0c7915c0aacf16b19bbf994/contrib/completion/git-completion.bash "$HOME/.git-completion.bash" "$bash_startup_file" "$1"
 	fi
 
 	# If git prompt not installed...
 	if ! type -t __git_ps1 > /dev/null 2>&1; then
-		git_load_helper https://raw.github.com/git/git/e90020cdb3273af3b0c7915c0aacf16b19bbf994/contrib/completion/git-prompt.sh "$HOME/.git-prompt.sh" "$bash_startup_file" "$1"
+		git_load_helper https://raw.githubusercontent.com/git/git/e90020cdb3273af3b0c7915c0aacf16b19bbf994/contrib/completion/git-prompt.sh "$HOME/.git-prompt.sh" "$bash_startup_file" "$1"
 	fi
 
-	git_load_helper https://raw.github.com/jakearchibald/git-convenience/master/terminal-prefs.sh "$HOME/.terminal-prefs.sh" "$bash_startup_file" "$1"
-	git_load_helper https://raw.github.com/jakearchibald/git-convenience/master/git-shortcuts.sh "$HOME/.git-shortcuts.sh" "$bash_startup_file" "$1"
+	git_load_helper https://raw.githubusercontent.com/jakearchibald/git-convenience/master/terminal-prefs.sh "$HOME/.terminal-prefs.sh" "$bash_startup_file" "$1"
+	git_load_helper https://raw.githubusercontent.com/jakearchibald/git-convenience/master/git-shortcuts.sh "$HOME/.git-shortcuts.sh" "$bash_startup_file" "$1"
 
 	unset setup_git_convenience
 	unset git_load_helper

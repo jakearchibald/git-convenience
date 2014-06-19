@@ -13,13 +13,13 @@ Works on OSX, Linux & Windows git-bash.
 Trial it in your current terminal session:
 
 ```
-eval "$(curl -L https://raw.github.com/jakearchibald/git-convenience/master/setup.sh) trial"
+eval "$(curl -L https://raw.githubusercontent.com/jakearchibald/git-convenience/master/setup.sh) trial"
 ```
 
 If it works for you, have it in all your terminals:
 
 ```
-eval "$(curl -L https://raw.github.com/jakearchibald/git-convenience/master/setup.sh)"
+eval "$(curl -L https://raw.githubusercontent.com/jakearchibald/git-convenience/master/setup.sh)"
 ```
 
 ## Shortcuts
@@ -41,7 +41,7 @@ If you've installed the wonderful [git-up](https://github.com/aanand/git-up) (wh
 
 ## Prompt
 
-![Prompt screenshot](https://raw.github.com/jakearchibald/git-convenience/master/screenshot.png)
+![Prompt screenshot](https://raw.githubusercontent.com/jakearchibald/git-convenience/master/screenshot.png)
 
 The prompt shows the current branch & among other helpful things:
 
